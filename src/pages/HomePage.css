@@ -1,0 +1,198 @@
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  z-index: 0;
+  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top
+    center;
+}
+
+.twinkling {
+  z-index: 1;
+  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png")
+    repeat top center;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  z-index: 2;
+  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat
+    top center;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.h1-homepage,
+.h3-homepage,
+.buttons-homepage {
+  z-index: 10;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.homepage-container {
+  padding-top: 25vh;
+}
+.h1-homepage {
+  font-family: Cormorant Garamond;
+  font-weight: 500;
+  font-size: 96px;
+  padding: 0;
+  margin: 0;
+}
+.h3-homepage{
+    font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.18em;
+padding: 0;
+margin: 0;
+margin-top: -23px;
+}
+.productos-button__homepage{
+background-color: #CDAE0F;
+color: #EEEEEE;
+border: 2px solid #CDAE0F;
+border-radius: 59px;
+width: 175px;
+height: 40px;
+margin: 30px 10px;
+font-weight: 500;
+font-size: 15px;
+}
+.quienes-button__homepage{
+background: transparent;
+color: #EEEEEE;
+border-radius: 59px;
+border: 2px solid #CDAE0F;
+width: 175px;
+height: 40px;
+margin: 30px 10px;
+font-weight: 500;
+}
+@media only screen and (max-width: 1144px){
+ .h1-homepage{
+   font-size: 85px;
+ }
+ .h3-homepage{
+   font-size: 16px;
+ }
+}
+@media only screen and (max-width: 768px){
+  .h1-homepage{
+    font-size: 65px;
+  }
+  .h3-homepage{
+    font-size: 12px;
+    margin-top: -18px;
+  }
+  .productos-button__homepage{
+    width: 145px;
+    height: 30px;
+    margin: 20px 10px;
+    font-weight: 500;
+    font-size: 11px;
+    }
+    .quienes-button__homepage{
+    width: 145px;
+    height: 30px;
+    margin: 20px 10px;
+    font-weight: 500;
+    font-size: 11px;
+    }
+}
+@media only screen and (max-width: 768px){
+  .h1-homepage{
+    font-size: 50px;
+  }
+  .h3-homepage{
+    font-size: 9.7px;
+    margin-top: -18px;
+  }
+  .homepage-container {
+    padding-top: 18vh;
+  }
+  .productos-button__homepage{
+    width: 125px;
+    height: 27px;
+    margin: 0px 5px;
+    font-weight: 500;
+    font-size: 11px;
+    }
+    .quienes-button__homepage{
+    width: 125px;
+    height: 27px;
+    margin: 0px 10px;
+    font-weight: 500;
+    font-size: 11px;
+    }
+  
+}
+@media only screen and (max-width: 420px){
+  .h1-homepage{
+    font-size: 49px;
+    
+  }
+  .h3-homepage{
+    font-size: 9.7px;
+    width: 90%;
+    letter-spacing: 0.14em;
+    text-align: center;
+    margin: 12px auto;
+    margin-top: -18px;
+    margin-bottom: 30px;
+  }
+  .homepage-container {
+    padding-top: 18vh;
+  }
+  .productos-button__homepage{
+    width: 195px;
+    height: 37px;
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    }
+    .quienes-button__homepage{
+    width: 195px;
+    height: 37px;
+    margin: 0px 10px;
+    font-weight: 500;
+    font-size: 12px;
+    }
+    .buttons-homepage{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+}

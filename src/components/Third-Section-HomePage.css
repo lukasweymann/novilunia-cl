@@ -1,0 +1,118 @@
+.third-section__homepage{
+    margin-top: 140px;
+}
+.h2-third-section__homepage{    
+font-size: 30px;
+font-weight: 400;
+color: #25313C;
+}
+.product-pics__homepage{
+    display: flex;
+    margin: 40px 140px;
+    justify-content: center;
+}
+.product{
+    width: 30%;
+
+}
+.visita-arrow{
+    display: flex;
+    justify-content: center;
+    font-family: Lato;
+    font-style: normal;
+    color: #25313C;
+}
+.arrow{
+    margin-left: 20px;
+    width: 40px;
+}
+
+.first-product__homepage{
+    margin-right: 55px;
+}
+.second-product__homepage{
+    margin-right: 55px;
+}
+
+@media only screen and (max-width: 1144px) {
+    .product {
+      max-width: 258px;
+    }
+    .product-pics__homepage{
+     margin: 20px 90px;
+    }
+    .first-product__homepage{
+        margin-right: 45px;
+    }
+    .second-product__homepage{
+        margin-right: 45px;
+    }
+  }
+  @media only screen and (max-width: 990px) {
+      .product {
+        max-width: 208px;
+      }
+  }
+  @media only screen and (max-width: 990px){
+    .first-product__homepage{
+        margin-right: 30px;
+    }
+    .second-product__homepage{
+        margin-right: 30px;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .product-pics__homepage{
+        margin: 10px 50px;
+       }
+  }
+  @media only screen and (max-width: 568px){
+    .product-pics__homepage{
+        margin: 10px 20px;
+       }
+       .first-product__homepage{
+        margin-bottom: 20px;
+    }
+    .second-product__homepage{
+        margin-bottom: 20px;
+    }
+    .product {
+        margin-right: 0;
+        max-width: 44%;
+        width: 44%;
+        height: auto;
+      }
+      .third-section__homepage{
+        margin-top: 60px;
+    }
+    .h2-third-section__homepage{    
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #25313C;
+    }
+    .h3-products-section__homepage{
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .product-pics__homepage{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrow{
+        margin-left: 5px;
+        width: 20px;
+    }
+  }
+  @media only screen and (max-width: 420px){
+    .product {
+        margin-right: 0;
+        max-width: 54%;
+        width: 54%;
+        height: auto;
+      }
+  }
