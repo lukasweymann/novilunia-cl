@@ -138,7 +138,7 @@ text-align: left;
     .first-section{
         display: flex;
         flex-direction: column;
-      margin: 270px 30px 0px 30px;
+      margin: 180px 30px 0px 30px;
     }
     .first-candle{
         display: none;
@@ -150,11 +150,11 @@ text-align: left;
 
     .first-paragraph__homepage{
         margin-left: 0;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 19px;
         text-align: center;
         margin-bottom: 18px;
-        font-weight: 400;
+        font-weight: 300;
         
     }
     .first-section-homepage__title{
