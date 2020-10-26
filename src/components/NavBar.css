@@ -1,110 +1,109 @@
 .nav {
-    background-color: transparent;
-    position: relative;
-    z-index: 5;
-    padding: 55px 140px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 20;
-  }
-  
+  background-color: transparent;
+  position: relative;
+  z-index: 5;
+  padding: 55px 140px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+}
+
 .nav > .nav-btn {
-    display: none;
-  }
-  .novilunia-logo{
-      max-width: 140px;
-  }
-  .nav > .nav-links {
-    display: inline;
-    float: right;
-    padding-top: 10px;
-    font-size: 13px;
-    
-    font-weight: 550;
-  }
-  
-  .nav > .nav-links > a {
+  display: none;
+}
+.novilunia-logo {
+  max-width: 140px;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  padding-top: 10px;
+  font-size: 13px;
+
+  font-weight: 550;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #bbb8b8;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav > .nav-btn {
     display: inline-block;
-    margin-left: 20px;
-    text-decoration: none;
-    color: #bbb8b8;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 15;
   }
-  
-  .nav > .nav-links > a:hover {
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    z-index: 15;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  
-  .nav > #nav-check {
-    display: none;
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid rgb(189, 187, 187);
+    z-index: 15;
   }
-  
-  @media (max-width:700px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 10px;
-      top: 20px;
-      z-index: 15;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-      z-index: 15;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid rgb(189, 187, 187);
-      z-index: 15;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 80px;
-      left: 0px;
-      z-index: 20;
-      padding-top: 0;
-
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-      padding: 20px 40px;
-      text-align: left;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 80px;
+    left: 0px;
+    z-index: 20;
+    padding-top: 0;
   }
-
-  @media only screen and (max-width: 1144px) {
-    .nav{
-      padding: 35px 90px;
-    }
-    
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    padding: 20px 40px;
+    text-align: left;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
-@media only screen and (max-width: 768px){
-  .nav{
+
+@media only screen and (max-width: 1144px) {
+  .nav {
+    padding: 35px 90px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav {
     padding: 35px 60px;
   }
 }
-@media only screen and (max-width: 568px){
-  .nav{
+@media only screen and (max-width: 568px) {
+  .nav {
     padding: 25px 30px;
   }
   .nav > .nav-btn {
@@ -121,8 +120,8 @@
     border-top: 2px solid rgb(189, 187, 187);
     z-index: 15;
   }
-  .novilunia-logo{
+  .novilunia-logo {
     max-width: 80px;
-    height: auto;
-}
+    height: 20px;
+  }
 }
