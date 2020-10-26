@@ -125,4 +125,7 @@
     height: 20px;
     margin-top: 4px;
   }
+  .nav > .nav-links > a {
+    padding: 20px 10px;
+  }
 }

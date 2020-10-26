@@ -150,21 +150,21 @@
     .second-section__homepage{
         display: flex;
         flex-direction: column;
+        margin: 40px 20px; 
     }
     .left-block-second-section__homepage{
-        width: 102%;
+        width: 100%;
     }
     .second-section__homepage-paragraph{
-        margin-top: -33px;
-        line-height: 22px;
-        font-size: 18px;
-        text-align: center;
-        margin-right: 30px;
+        margin: -26px 0px 60px 0px;
+        line-height: 23px;
+        font-size: 16px;
+        text-align: left;
         font-weight: 300;
     }
     .title-second-section__homepage{
         max-width: none;
-        margin-top: -40px;
+        margin-top: -20px;
         justify-content: center;
     }
     .second-section__homepage-h2{
@@ -176,7 +176,7 @@
         max-width: 60%;
         height: auto;
        margin: 0;
-       margin-right: 30px;
+     
       }
       .title-second-section__homepage{
         max-width: 80%;
