@@ -121,4 +121,7 @@
     border-top: 2px solid rgb(189, 187, 187);
     z-index: 15;
   }
+  .novilunia-logo{
+    max-width: 100px;
+}
 }

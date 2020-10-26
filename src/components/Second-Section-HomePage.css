@@ -146,7 +146,7 @@
     
     
 }
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 460px){
     .second-section__homepage{
         display: flex;
         flex-direction: column;
@@ -155,20 +155,21 @@
         width: 102%;
     }
     .second-section__homepage-paragraph{
-        margin-top: -43px;
+        margin-top: -33px;
         line-height: 19px;
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
         margin-right: 30px;
+        font-weight: 400;
     }
     .title-second-section__homepage{
-        max-width: 90%;
+        max-width: none;
         margin-top: -40px;
         justify-content: center;
     }
     .second-section__homepage-h2{
-        font-size: 3.7vh;
-        line-height: 20px;
+        font-size: 22px;
+        line-height: 23px;
         margin: 0;
     }
     .second-candle{
@@ -177,4 +178,9 @@
        margin: 0;
        margin-right: 30px;
       }
+      .title-second-section__homepage{
+        max-width: 80%;
+        margin-top: -30px;
+    }
+     
 }
